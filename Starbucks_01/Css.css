@@ -1,0 +1,170 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Menu bar*/
+#menu {
+    display: flex;
+    background-color: green;
+    border: 10px solid green;
+}
+
+.menu_logo {
+    gap: 2%;
+}
+
+.menu_logo > img {
+    width: 5vw;
+}
+
+.menu_item {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.menu_link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2em;
+}
+
+div > a {
+    font-family: 'Tilt Warp', cursive;
+    outline: none;
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    color: white;
+}
+
+a > img {
+    width: 4vw;
+}
+
+.menu_imgs {
+    justify-content: right;
+    gap: 1em;
+}
+
+/*Slider*/
+.conteiner {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: green;
+}
+
+.slide_nav {
+    position: absolute;
+    display: flex;
+    bottom: 15%;
+    left: 15%;
+    gap: 0.5em;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide {
+    width: 33.3%;
+    transition: .6s;
+    margin-left: 13%;
+}
+
+.slide > img {
+    height: 70vh;
+}
+
+.button {
+    width: 1vw;
+    height: 2vh;
+    border: 0.3em solid white;
+    border-radius: 50%;
+    gap: 1%;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 13%;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -34%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+/*Avalição*/
+.avaliation {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.opinion {
+    background-color: white;
+    width: 60vw;
+    height: 30vh;
+    border: 0.5em solid white;
+    border-radius: 5em;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 10%;
+    
+}
+
+span {
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 4em;
+}
+
+.clients {
+    height: 100%;
+}
+
+/*Fotter*/
+.final {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.info {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
